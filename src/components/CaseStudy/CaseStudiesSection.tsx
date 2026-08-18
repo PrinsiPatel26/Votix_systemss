@@ -7,8 +7,8 @@ import { cn } from '../../utils/cn';
 
 export function CaseStudiesSection() {
   return (
-    <section id="case-studies" className="w-full bg-white py-[60px] md:py-[88px] lg:py-[140px]">
-      <div className="mx-auto max-w-content px-6 md:px-10">
+    <section id="case-studies" className="w-full bg-white py-[50px] sm:py-[60px] md:py-[88px] lg:py-[140px]">
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
         <div className="flex items-center gap-4 border-t border-line pt-4">
           <span className="text-[11px] font-medium uppercase tracking-label text-steel">10 / Case studies</span>
         </div>

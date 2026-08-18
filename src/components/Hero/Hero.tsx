@@ -18,7 +18,7 @@ export function Hero() {
   const headline = ['Engineered', 'to', 'mix.', '\n', 'Built', 'to', 'perform.'];
 
   return (
-    <section className="relative isolate w-full overflow-hidden bg-white pt-[104px] lg:min-h-[100svh] lg:pt-[92px]">
+    <section className="relative isolate w-full overflow-hidden bg-white pt-[80px] sm:pt-[96px] md:pt-[104px] lg:min-h-[100svh] lg:pt-[92px]">
       {/* Right-hand technical field */}
       <motion.div
         aria-hidden
@@ -28,20 +28,20 @@ export function Hero() {
         className="absolute inset-y-0 right-0 hidden w-[46%] bg-paper eng-grid lg:block" />
       
 
-      <div className="relative mx-auto grid max-w-content items-center gap-10 px-6 pb-16 md:px-10 lg:min-h-[calc(100svh-92px)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-6 lg:pb-0">
+      <div className="relative mx-auto grid max-w-content items-center gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6 pb-12 sm:pb-16 md:pb-16 md:px-10 lg:min-h-[calc(100svh-92px)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-6 lg:pb-0">
         {/* Copy */}
         <div className="relative z-10 max-w-2xl lg:py-24">
           <motion.p
             initial={reduce ? undefined : { opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease, delay: 0.15 }}
-            className="flex items-center gap-3 text-[11px] font-medium uppercase tracking-label text-graphite">
+            className="flex items-center gap-2 sm:gap-3 text-[10px] sm:text-[11px] font-medium uppercase tracking-label text-graphite">
             
-            <span aria-hidden className="h-px w-8 bg-accent" />
+            <span aria-hidden className="h-px w-6 sm:w-8 bg-accent" />
             Advanced mixing technology
           </motion.p>
 
-          <h1 className="mt-7 font-display text-display font-semibold text-ink">
+          <h1 className="mt-4 sm:mt-6 md:mt-7 font-display text-display font-semibold text-ink">
             {headline.map((word, i) =>
             word === '\n' ?
             <br key={i} /> :
@@ -65,7 +65,7 @@ export function Hero() {
             initial={reduce ? undefined : { opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease, delay: 0.62 }}
-            className="mt-8 max-w-md text-[16px] leading-relaxed text-graphite md:text-[17px]">
+            className="mt-6 sm:mt-8 max-w-md text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed text-graphite md:text-[17px]">
             
             Precision-engineered agitators and mixing systems designed for demanding industrial processes.
           </motion.p>

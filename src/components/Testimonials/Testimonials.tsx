@@ -16,8 +16,8 @@ export function Testimonials() {
   };
 
   return (
-    <section aria-label="Client testimonials" className="w-full bg-ink py-[60px] text-white md:py-[88px] lg:py-[130px]">
-      <div className="mx-auto max-w-content px-6 md:px-10">
+    <section aria-label="Client testimonials" className="w-full bg-ink py-[50px] sm:py-[60px] text-white md:py-[88px] lg:py-[130px]">
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
         <div className="flex items-center justify-between gap-4 border-t border-white/15 pt-4">
           <span className="text-[11px] font-medium uppercase tracking-label text-white/50">13 / Clients</span>
           <span className="text-[11px] tabular-nums uppercase tracking-label text-white/50">
@@ -69,7 +69,7 @@ export function Testimonials() {
                 type="button"
                 onClick={() => go(-1)}
                 aria-label="Previous testimonial"
-                className="border border-white/20 p-3.5 text-white transition-colors duration-200 hover:border-white/60">
+                className="border border-white/20 p-3.5 text-white transition-colors duration-200 hover:border-white/60 min-h-[44px] min-w-[44px] flex items-center justify-center">
                 
                 <ArrowLeftIcon className="h-4 w-4" aria-hidden />
               </button>
@@ -77,7 +77,7 @@ export function Testimonials() {
                 type="button"
                 onClick={() => go(1)}
                 aria-label="Next testimonial"
-                className="border border-white/20 p-3.5 text-white transition-colors duration-200 hover:border-white/60">
+                className="border border-white/20 p-3.5 text-white transition-colors duration-200 hover:border-white/60 min-h-[44px] min-w-[44px] flex items-center justify-center">
                 
                 <ArrowRightIcon className="h-4 w-4" aria-hidden />
               </button>

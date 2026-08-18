@@ -92,7 +92,7 @@ export function SearchOverlay({ open, onClose }: {open: boolean;onClose: () => v
                     key={s}
                     type="button"
                     onClick={() => setQuery(s)}
-                    className="border border-line px-4 py-2 text-[13px] text-graphite transition-colors hover:border-ink hover:text-ink">
+                    className="border border-line px-4 py-2 text-[13px] text-graphite transition-colors hover:border-ink hover:text-ink min-h-[44px] flex items-center">
                     
                           {s}
                         </button>

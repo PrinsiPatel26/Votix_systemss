@@ -11,8 +11,8 @@ const details = [
 
 export function ContactSection({ sectionNumber = '17' }: {sectionNumber?: string;}) {
   return (
-    <section id="contact" className="w-full bg-white py-[60px] md:py-[88px] lg:py-[130px]">
-      <div className="mx-auto max-w-content px-6 md:px-10">
+    <section id="contact" className="w-full bg-white py-[50px] sm:py-[60px] md:py-[88px] lg:py-[130px]">
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
         <div className="flex items-center gap-4 border-t border-line pt-4">
           <span className="text-[11px] font-medium uppercase tracking-label text-steel">{sectionNumber} / Contact</span>
         </div>

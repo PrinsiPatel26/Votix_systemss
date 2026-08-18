@@ -3,13 +3,13 @@ import { Eyebrow, WordReveal, Reveal, Counter, TextLink } from '../ui/Primitives
 
 export function Introduction() {
   return (
-    <section id="introduction" className="relative w-full bg-white py-[60px] md:py-[88px] lg:py-[140px]">
-      <div className="mx-auto max-w-content px-6 md:px-10">
-        <div className="flex items-center gap-4 border-t border-line pt-4">
-          <span className="text-[11px] font-medium uppercase tracking-label text-steel">01 / Engineering with purpose</span>
+    <section id="introduction" className="relative w-full bg-white py-[50px] sm:py-[60px] md:py-[88px] lg:py-[140px]">
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
+        <div className="flex items-center gap-2 sm:gap-4 border-t border-line pt-3 sm:pt-4">
+          <span className="text-[10px] sm:text-[11px] font-medium uppercase tracking-label text-steel">01 / Engineering with purpose</span>
         </div>
 
-        <div className="mt-12 grid gap-12 lg:mt-20 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-24">
+        <div className="mt-8 sm:mt-12 grid gap-8 sm:gap-12 lg:mt-20 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-24">
           <div>
             <Eyebrow className="lg:hidden">Engineering with purpose</Eyebrow>
             <WordReveal

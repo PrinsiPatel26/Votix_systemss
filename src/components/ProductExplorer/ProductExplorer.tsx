@@ -13,8 +13,8 @@ export function ProductExplorer() {
   const active = explorerHotspots.find((h) => h.id === activeId)!;
 
   return (
-    <section id="explorer" className="w-full bg-paper py-[60px] md:py-[88px] lg:py-[140px]">
-      <div className="mx-auto max-w-content px-6 md:px-10">
+    <section id="explorer" className="w-full bg-paper py-[50px] sm:py-[60px] md:py-[88px] lg:py-[140px]">
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
         <div className="flex items-center gap-4 border-t border-line pt-4">
           <span className="text-[11px] font-medium uppercase tracking-label text-steel">04 / Technical explorer</span>
         </div>
@@ -85,7 +85,7 @@ export function ProductExplorer() {
                 onClick={() => setActiveId(h.id)}
                 aria-pressed={h.id === activeId}
                 className={cn(
-                  'shrink-0 border px-4 py-2.5 text-[11px] font-medium uppercase tracking-label transition-colors duration-200',
+                  'shrink-0 border px-4 py-3 text-[11px] font-medium uppercase tracking-label transition-colors duration-200 min-h-[44px] flex items-center',
                   h.id === activeId ? 'border-accent bg-white text-accent' : 'border-line bg-white text-graphite'
                 )}>
                 

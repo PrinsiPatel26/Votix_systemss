@@ -272,8 +272,12 @@ export function Footer() {
                 src="/votix.download.png"
                 alt="Votix Systems"
                 className="
-                  h-[82px]
-                  w-[260px]
+                  h-[60px]
+                  w-[180px]
+                  sm:h-[70px]
+                  sm:w-[220px]
+                  md:h-[82px]
+                  md:w-[260px]
                   max-w-full
                   object-contain
                   object-left

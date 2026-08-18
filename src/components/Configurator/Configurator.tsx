@@ -52,8 +52,8 @@ export function Configurator() {
   };
 
   return (
-    <section id="configurator" className="w-full bg-white py-[60px] md:py-[88px] lg:py-[130px]">
-      <div className="mx-auto max-w-content px-6 md:px-10">
+    <section id="configurator" className="w-full bg-white py-[50px] sm:py-[60px] md:py-[88px] lg:py-[130px]">
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
         <div className="flex items-center gap-4 border-t border-line pt-4">
           <span className="text-[11px] font-medium uppercase tracking-label text-steel">Solution finder</span>
         </div>
@@ -79,7 +79,7 @@ export function Configurator() {
               const complete = Boolean(selections[s.key]);
               const activeStep = i === step && !done;
               return (
-                <li key={s.key} className="flex-1">
+                <li key={s.key} className="flex-1 min-h-[56px] sm:min-h-auto">
                   <button
                     type="button"
                     onClick={() => {

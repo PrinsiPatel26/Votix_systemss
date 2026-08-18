@@ -8,8 +8,8 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="w-full bg-paper py-[60px] md:py-[88px] lg:py-[130px]">
-      <div className="mx-auto max-w-content px-6 md:px-10">
+    <section id="faq" className="w-full bg-paper py-[50px] sm:py-[60px] md:py-[88px] lg:py-[130px]">
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
         <div className="flex items-center gap-4 border-t border-line pt-4">
           <span className="text-[11px] font-medium uppercase tracking-label text-steel">15 / Frequently asked</span>
         </div>
@@ -41,7 +41,7 @@ export function FAQ() {
                       type="button"
                       onClick={() => setOpen(isOpen ? null : i)}
                       aria-expanded={isOpen}
-                      className="group flex w-full items-start justify-between gap-6 py-6 text-left">
+                      className="group flex w-full min-h-[56px] items-start justify-between gap-6 py-6 text-left transition-colors hover:text-accent sm:min-h-auto">
                       
                       <span className="font-display text-[17px] font-medium leading-snug text-ink md:text-[19px]">
                         {faq.question}

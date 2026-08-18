@@ -19,8 +19,8 @@ export function Manufacturing() {
   const x = useTransform(scrollYProgress, [0, 1], reduce ? ['0%', '0%'] : ['2%', '-22%']);
 
   return (
-    <section ref={ref} className="w-full overflow-hidden bg-paper py-[60px] md:py-[88px] lg:py-[130px]">
-      <div className="mx-auto max-w-content px-6 md:px-10">
+    <section ref={ref} className="w-full overflow-hidden bg-paper py-[50px] sm:py-[60px] md:py-[88px] lg:py-[130px]">
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
         <div className="flex items-center gap-4 border-t border-line pt-4">
           <span className="text-[11px] font-medium uppercase tracking-label text-steel">09 / Quality & manufacturing</span>
         </div>

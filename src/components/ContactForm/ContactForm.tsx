@@ -107,7 +107,7 @@ export function ContactForm() {
             onChange={(e) => setField(k, e.target.value)}
             aria-invalid={Boolean(errors[k])}
             className={cn(
-              'mt-2 w-full border-b bg-transparent py-3 text-[15px] text-ink outline-none transition-colors',
+              'mt-2 w-full border-b bg-transparent px-1 py-3 text-[15px] text-ink outline-none transition-colors sm:px-2',
               errors[k] ? 'border-accent' : 'border-line focus:border-ink'
             )} />
           

@@ -83,8 +83,8 @@ export function VirtualShowroom() {
   const [activeId, setActiveId] = useState<string | null>('impeller');
 
   return (
-    <section id="showroom" className="w-full bg-paper py-[60px] md:py-[88px] lg:py-[140px]">
-      <div className="mx-auto max-w-content px-6 md:px-10">
+    <section id="showroom" className="w-full bg-paper py-[50px] sm:py-[60px] md:py-[88px] lg:py-[140px]">
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
         <div className="flex items-center gap-4 border-t border-line pt-4">
           <span className="text-[11px] font-medium uppercase tracking-label text-steel">11 / Virtual showroom</span>
         </div>

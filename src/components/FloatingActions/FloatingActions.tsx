@@ -87,7 +87,7 @@ export function FloatingActions() {
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? 'Close contact actions' : 'Open contact actions'}
-          className="flex h-14 w-14 items-center justify-center bg-accent text-white shadow-[0_10px_26px_rgba(11,63,214,0.3)]">
+          className="flex min-h-[56px] min-w-[56px] items-center justify-center bg-accent text-white shadow-[0_10px_26px_rgba(11,63,214,0.3)] transition-transform hover:scale-105 active:scale-95 sm:h-14 sm:w-14">
           
           <motion.span animate={{ rotate: open ? 45 : 0 }} transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}>
             {open ? <XIcon className="h-6 w-6" aria-hidden /> : <PlusIcon className="h-6 w-6" aria-hidden />}

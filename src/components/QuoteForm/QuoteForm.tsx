@@ -105,7 +105,7 @@ function Field({
         onChange={(e) => onChange(name, e.target.value)}
         aria-invalid={Boolean(error)}
         className={cn(
-          'mt-2 w-full appearance-none border-b bg-transparent py-3 text-[15px] text-ink outline-none transition-colors',
+          'mt-2 w-full appearance-none border-b bg-transparent px-1 py-3 text-[15px] text-ink outline-none transition-colors sm:px-2',
           error ? 'border-accent' : 'border-line focus:border-ink'
         )}>
         
@@ -123,7 +123,7 @@ function Field({
         value={value}
         onChange={(e) => onChange(name, e.target.value)}
         placeholder="Media, batch behaviour, existing equipment, constraints…"
-        className="mt-2 w-full resize-none border-b border-line bg-transparent py-3 text-[15px] text-ink outline-none transition-colors placeholder:text-steel/70 focus:border-ink" /> :
+        className="mt-2 w-full resize-none border-b border-line bg-transparent px-1 py-3 text-[15px] text-ink outline-none transition-colors placeholder:text-steel/70 focus:border-ink sm:px-2" /> :
 
 
       <input
@@ -133,7 +133,7 @@ function Field({
         onChange={(e) => onChange(name, e.target.value)}
         aria-invalid={Boolean(error)}
         className={cn(
-          'mt-2 w-full border-b bg-transparent py-3 text-[15px] text-ink outline-none transition-colors',
+          'mt-2 w-full border-b bg-transparent px-1 py-3 text-[15px] text-ink outline-none transition-colors sm:px-2',
           error ? 'border-accent' : 'border-line focus:border-ink'
         )} />
 
@@ -202,8 +202,8 @@ export function QuoteForm({ compact = false }: {compact?: boolean;}) {
   };
 
   return (
-    <section id="quote" className={cn('w-full bg-paper py-[60px] md:py-[88px]', compact ? 'lg:py-[110px]' : 'lg:py-[130px]')}>
-      <div className="mx-auto max-w-content px-6 md:px-10">
+    <section id="quote" className={cn('w-full bg-paper py-[50px] sm:py-[60px] md:py-[88px]', compact ? 'lg:py-[110px]' : 'lg:py-[130px]')}>
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
         <div className="flex items-center gap-4 border-t border-line pt-4">
           <span className="text-[11px] font-medium uppercase tracking-label text-steel">16 / Request a quote</span>
         </div>

@@ -15,10 +15,10 @@ export function ProductShowcase() {
   const { ref, progress, scrollByPanel } = useDragScroll<HTMLDivElement>();
 
   return (
-    <section id="technology" className="w-full bg-white py-[60px] md:py-[88px] lg:py-[140px]">
-      <div className="mx-auto max-w-content px-6 md:px-10">
-        <div className="flex items-center gap-4 border-t border-line pt-4">
-          <span className="text-[11px] font-medium uppercase tracking-label text-steel">03 / Product technology</span>
+    <section id="technology" className="w-full bg-white py-[50px] sm:py-[60px] md:py-[88px] lg:py-[140px]">
+      <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
+        <div className="flex items-center gap-2 sm:gap-4 border-t border-line pt-3 sm:pt-4">
+          <span className="text-[10px] sm:text-[11px] font-medium uppercase tracking-label text-steel">03 / Product technology</span>
         </div>
 
         <div className="mt-12 flex flex-col justify-between gap-8 lg:mt-16 lg:flex-row lg:items-end">
@@ -34,7 +34,7 @@ export function ProductShowcase() {
                 type="button"
                 onClick={() => scrollByPanel(-1)}
                 aria-label="Previous product"
-                className="border border-line p-3.5 text-ink transition-colors duration-200 hover:border-ink">
+                className="border border-line p-3.5 text-ink transition-colors duration-200 hover:border-ink min-h-[44px] min-w-[44px] flex items-center justify-center">
                 
                 <ArrowLeftIcon className="h-4 w-4" aria-hidden />
               </button>
@@ -42,7 +42,7 @@ export function ProductShowcase() {
                 type="button"
                 onClick={() => scrollByPanel(1)}
                 aria-label="Next product"
-                className="border border-line p-3.5 text-ink transition-colors duration-200 hover:border-ink">
+                className="border border-line p-3.5 text-ink transition-colors duration-200 hover:border-ink min-h-[44px] min-w-[44px] flex items-center justify-center">
                 
                 <ArrowRightIcon className="h-4 w-4" aria-hidden />
               </button>

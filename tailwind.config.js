@@ -1,5 +1,8 @@
 export default {
-  content: ['./**/*.{js,jsx,ts,tsx,html}'],
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {
       colors: {
@@ -25,15 +28,12 @@ export default {
       },
       maxWidth: {
         shell: '1440px',
-        content: [
-  './index.html',
-  './src/**/*.{js,ts,jsx,tsx}'
-],
+        content: '1440px',
       },
       fontSize: {
-        display: ['clamp(2.6rem, 6.4vw, 6.5rem)', { lineHeight: '0.94', letterSpacing: '-0.03em' }],
-        section: ['clamp(2rem, 3.9vw, 3.9rem)', { lineHeight: '1.02', letterSpacing: '-0.025em' }],
-        colossal: ['clamp(4.5rem, 13vw, 13rem)', { lineHeight: '0.82', letterSpacing: '-0.045em' }],
+        display: ['clamp(1.8rem, 5vw, 6.5rem)', { lineHeight: '0.94', letterSpacing: '-0.03em' }],
+        section: ['clamp(1.4rem, 3.2vw, 3.9rem)', { lineHeight: '1.02', letterSpacing: '-0.025em' }],
+        colossal: ['clamp(3rem, 10vw, 13rem)', { lineHeight: '0.82', letterSpacing: '-0.045em' }],
       },
       transitionTimingFunction: {
         expo: 'cubic-bezier(0.23, 1, 0.32, 1)',
