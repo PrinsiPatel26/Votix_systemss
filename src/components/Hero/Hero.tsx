@@ -18,7 +18,7 @@ export function Hero() {
   const headline = ['Engineered', 'to', 'mix.', '\n', 'Built', 'to', 'perform.'];
 
   return (
-    <section className="relative isolate w-full overflow-hidden bg-white pt-[80px] sm:pt-[96px] md:pt-[104px] lg:min-h-[100svh] lg:pt-[92px]">
+    <section className="relative isolate w-full overflow-hidden bg-white pt-[60px] sm:pt-[80px] md:pt-[96px] lg:pt-[104px] lg:min-h-[100svh] lg:pt-[92px]">
       {/* Right-hand technical field */}
       <motion.div
         aria-hidden
@@ -28,9 +28,9 @@ export function Hero() {
         className="absolute inset-y-0 right-0 hidden w-[46%] bg-paper eng-grid lg:block" />
       
 
-      <div className="relative mx-auto grid max-w-content items-center gap-6 sm:gap-8 md:gap-10 px-4 sm:px-6 pb-12 sm:pb-16 md:pb-16 md:px-10 lg:min-h-[calc(100svh-92px)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-6 lg:pb-0">
+      <div className="relative mx-auto grid max-w-content items-center gap-4 sm:gap-6 md:gap-8 px-4 sm:px-6 pb-8 sm:pb-12 md:pb-16 md:px-10 lg:min-h-[calc(100svh-92px)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-6 lg:pb-0">
         {/* Copy */}
-        <div className="relative z-10 max-w-2xl lg:py-24">
+        <div className="relative z-10 max-w-2xl lg:py-24 break-words">
           <motion.p
             initial={reduce ? undefined : { opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
