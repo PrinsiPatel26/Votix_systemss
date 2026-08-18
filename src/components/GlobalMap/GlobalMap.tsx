@@ -97,7 +97,7 @@ export function GlobalMap() {
               })}
             </svg>
 
-            <ul className="no-scrollbar -mx-6 mt-6 flex gap-2 overflow-x-auto px-6 lg:mx-0 lg:flex-wrap lg:px-0">
+            <ul className="no-scrollbar mt-6 flex gap-2 overflow-x-auto px-4 sm:px-6 lg:mx-0 lg:flex-wrap lg:px-0">
               {globalRegions.map((r) =>
               <li key={r.id} className="shrink-0">
                   <button

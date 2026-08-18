@@ -56,7 +56,7 @@ export function ProductShowcase() {
         ref={ref}
         className="no-scrollbar drag-region mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-2 md:px-10 lg:mt-16 lg:gap-8">
         
-        <div aria-hidden className="hidden shrink-0 lg:block lg:w-[max(0px,calc((100vw-1320px)/2))]" />
+        <div aria-hidden className="hidden shrink-0 lg:block lg:w-[max(0px,calc((100%-1320px)/2))]" />
         {featured.map((p) =>
         <article
           key={p.slug}

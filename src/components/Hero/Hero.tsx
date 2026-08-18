@@ -28,9 +28,9 @@ export function Hero() {
         className="absolute inset-y-0 right-0 hidden w-[46%] bg-paper eng-grid lg:block" />
       
 
-      <div className="relative mx-auto grid max-w-content items-center gap-4 sm:gap-6 md:gap-8 px-4 sm:px-6 pb-8 sm:pb-12 md:pb-16 md:px-10 lg:min-h-[calc(100svh-92px)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-6 lg:pb-0">
+      <div className="relative mx-auto grid w-full max-w-full items-center gap-4 sm:gap-6 md:gap-8 px-4 sm:px-6 pb-8 sm:pb-12 md:pb-16 md:px-10 lg:min-h-[calc(100svh-92px)] lg:max-w-content lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-6 lg:pb-0 lg:mx-auto">
         {/* Copy */}
-        <div className="relative z-10 max-w-2xl lg:py-24 break-words">
+        <div className="relative z-10 w-full min-w-0 max-w-full lg:py-24 break-words">
           <motion.p
             initial={reduce ? undefined : { opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
@@ -114,12 +114,12 @@ export function Hero() {
         </div>
 
         {/* Equipment */}
-        <div className="relative lg:h-full">
+        <div className="relative w-full lg:h-full lg:min-w-0">
           <motion.div
             initial={reduce ? undefined : { opacity: 0, y: 40, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 1.05, ease, delay: 0.1 }}
-            className="relative mx-auto h-[420px] w-full max-w-[420px] sm:h-[520px] lg:h-[calc(100svh-40px)] lg:max-w-none lg:-mr-24 lg:w-[118%]">
+            className="relative mx-auto h-[320px] w-full max-w-full overflow-hidden sm:h-[420px] md:h-[500px] lg:h-[calc(100svh-92px)] lg:w-full">
             
             <img
               src={media.heroAgitator}

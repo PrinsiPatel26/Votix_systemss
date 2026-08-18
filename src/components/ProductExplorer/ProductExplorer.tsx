@@ -77,7 +77,7 @@ export function ProductExplorer() {
             </div>
 
             {/* Mobile selector */}
-            <div className="no-scrollbar -mx-6 mt-6 flex gap-2 overflow-x-auto px-6 md:hidden">
+            <div className="no-scrollbar mt-6 flex gap-2 overflow-x-auto px-4 sm:px-6 md:hidden">
               {explorerHotspots.map((h) =>
               <button
                 key={h.id}

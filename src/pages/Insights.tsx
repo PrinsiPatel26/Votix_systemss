@@ -29,8 +29,8 @@ export function Insights() {
       
 
       <section className="w-full bg-white py-[60px] md:py-[80px] lg:py-[110px]">
-        <div className="mx-auto max-w-content px-6 md:px-10">
-          <div className="no-scrollbar -mx-6 flex gap-2 overflow-x-auto border-t border-line px-6 pt-6 md:mx-0 md:flex-wrap md:px-0">
+        <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
+          <div className="no-scrollbar flex gap-2 overflow-x-auto border-t border-line px-0 pt-6 md:flex-wrap">
             {insightCategories.map((c) =>
             <button
               key={c}
@@ -38,7 +38,7 @@ export function Insights() {
               onClick={() => setCategory(c)}
               aria-pressed={category === c}
               className={cn(
-                'shrink-0 border px-4 py-2.5 text-[11px] font-medium uppercase tracking-label transition-colors duration-200',
+                'shrink-0 border px-4 py-2.5 text-[11px] font-medium uppercase tracking-label transition-colors duration-200 min-h-[44px] flex items-center',
                 category === c ? 'border-accent text-accent' : 'border-line text-graphite hover:border-ink hover:text-ink'
               )}>
               
