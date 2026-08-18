@@ -1,0 +1,28 @@
+// Central asset registry. Swap a URL here and it updates everywhere it is used.
+export const media = {
+  heroAgitator: "/94fc0627-2456-40fd-888f-7379520c6b31.jpg",
+  productTopEntry: "/a2726840-e080-41eb-a010-59a428689b66.jpg",
+  productSideEntry: "/d0a1b097-e1fa-451e-ae74-6a556ff39780.jpg",
+  productBottomEntry: "/23dcdea6-c0b9-49cc-8e92-4326a7640373.jpg",
+  productMagnetic: "/95eca5b2-2bc0-40e8-9c9b-954ce967c6d6.jpg",
+  productInline: "/cd87756b-ec65-4d13-ae0c-9838c7518c74.jpg",
+  productHighShear: "/66c1b7ca-cf34-47f4-b2fd-5f3322a8f2d8.jpg",
+  productSpecial: "/b6310aa8-b377-4836-8e54-b2f163d50b15.jpg",
+  productSystem: "/fa9a3838-3c1d-428f-916e-6ddd8b68aca8.jpg",
+  explorerUnit: "/0fdbaef3-2b5a-4df8-bde4-c4197594e228.jpg",
+  factoryWide: "/be257a64-d076-4c3b-8a62-89095c0e0487.jpg",
+  engineerInspecting: "/157b37eb-510a-451f-8b75-63e899f23735.jpg",
+  cncMachining: "/f9188527-d1e8-4de7-8dd2-382622ba1a85.jpg",
+  welding: "/226f2c11-e4a6-4948-9f8c-01a67d736bb5.jpg",
+  assemblyHall: "/9f027c55-99d5-4421-a5cb-b839f7b40580.jpg",
+  industryFood: "/78efaefc-9adf-4414-9ed8-72f3024f4e05.jpg",
+  industryDairy: "/6c679843-a637-49cb-b130-b70372d00cbb.jpg",
+  industryPharma: "/e8dd88a4-fb06-47c4-a687-ed7cb3d492e4.jpg",
+  industryChemical: "/f2988a8f-4756-431e-b5e6-c83082d3084b.jpg",
+  industryBiogas: "/67996173-7943-4966-9765-202c7386bdd1.jpg",
+  industryCosmetics: "/d6774527-f3ed-4ab9-85a9-490520ee54ce.jpg",
+  industryEnergy: "/171f763b-1c5d-436d-85fe-973444d0c644.jpg",
+  cfdEngineering: "/92e75016-7e65-4063-a589-cff3cea415ce.jpg",
+  qualityInspection: "/d389d311-0763-4e07-9598-17815a16d552.jpg",
+  testingRig: "/67d47a21-da00-4bc3-9aae-1a9fa8be6688.jpg"
+};
