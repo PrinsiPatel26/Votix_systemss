@@ -21,7 +21,7 @@ export function WhyChooseUs() {
         <WordReveal
           as="h2"
           text={'Six reasons engineers\nkeep coming back'}
-          className="mt-12 max-w-2xl font-display text-section font-semibold text-ink lg:mt-16" />
+          className="mt-12 max-w-2xl font-display text-section font-bold text-ink lg:mt-16" />
         
 
         <ul className="mt-12 lg:mt-16">

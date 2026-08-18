@@ -15,7 +15,7 @@ export function Introduction() {
             <WordReveal
               as="h2"
               text={'We don’t just build agitators.\nWe engineer the\nmixing process.'}
-              className="mt-6 font-display text-section font-semibold text-ink lg:mt-0" />
+              className="mt-6 font-display text-section font-bold text-ink lg:mt-0" />
             
           </div>
 
@@ -40,7 +40,7 @@ export function Introduction() {
 
         <div className="mt-16 grid items-end gap-10 border-t border-line pt-12 lg:mt-24 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-24">
           <Reveal className="flex items-end gap-6">
-            <span className="font-display text-colossal font-semibold tabular-nums leading-none text-ink">
+            <span className="font-display text-colossal font-bold tabular-nums leading-none text-ink">
               <Counter value="40+" />
             </span>
             <span className="mb-3 max-w-[120px] text-[11px] uppercase tracking-label text-steel">

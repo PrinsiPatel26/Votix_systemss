@@ -98,7 +98,7 @@ export function VirtualShowroom() {
             <WordReveal
               as="h2"
               text={'Explore the\ntechnology'}
-              className="font-display text-section font-semibold text-ink" />
+              className="font-display text-section font-bold text-ink" />
             
             <Reveal>
               <p className="mt-7 text-[15.5px] leading-relaxed text-graphite">

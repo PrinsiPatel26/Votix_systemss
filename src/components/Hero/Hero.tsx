@@ -41,7 +41,7 @@ export function Hero() {
             Advanced mixing technology
           </motion.p>
 
-          <h1 className="mt-4 sm:mt-6 md:mt-7 font-display text-display font-semibold text-ink">
+          <h1 className="mt-4 sm:mt-6 md:mt-7 font-display text-display font-bold text-ink leading-tight">
             {headline.map((word, i) =>
             word === '\n' ?
             <br key={i} /> :

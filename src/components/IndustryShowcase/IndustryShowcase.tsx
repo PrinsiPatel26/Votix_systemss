@@ -30,7 +30,7 @@ export function IndustryShowcase() {
           <WordReveal
             as="h2"
             text={'Engineered for\nyour industry'}
-            className="font-display text-section font-semibold text-ink" />
+            className="font-display text-section font-bold text-ink" />
           
           <Reveal className="max-w-sm">
             <p className="text-[13px] sm:text-[15px] leading-relaxed text-graphite">

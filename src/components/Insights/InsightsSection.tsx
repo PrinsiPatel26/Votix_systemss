@@ -14,7 +14,7 @@ export function InsightsSection() {
         </div>
 
         <div className="mt-12 flex flex-col justify-between gap-8 lg:mt-16 lg:flex-row lg:items-end">
-          <WordReveal as="h2" text="Engineering insights" className="font-display text-section font-semibold text-ink" />
+          <WordReveal as="h2" text="Engineering insights" className="font-display text-section font-bold text-ink" />
           <Reveal>
             <TextLink to="/insights">All insights</TextLink>
           </Reveal>

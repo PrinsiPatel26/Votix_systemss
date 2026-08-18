@@ -213,7 +213,7 @@ export function QuoteForm({ compact = false }: {compact?: boolean;}) {
             <WordReveal
               as="h2"
               text={'Let’s engineer\nyour solution'}
-              className="font-display text-section font-semibold text-ink" />
+              className="font-display text-section font-bold text-ink" />
             
             <p className="mt-6 max-w-xs text-[15px] leading-relaxed text-graphite">
               The more process detail you share, the more concrete our response. Every request is reviewed by an

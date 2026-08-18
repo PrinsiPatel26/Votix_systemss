@@ -25,7 +25,7 @@ export function ProductShowcase() {
           <WordReveal
             as="h2"
             text={'Mixing technology\nfor every process'}
-            className="max-w-xl font-display text-section font-semibold text-ink" />
+            className="max-w-xl font-display text-section font-bold text-ink" />
           
           <Reveal className="flex items-center justify-between gap-6 lg:justify-end">
             <TextLink to="/products">All products</TextLink>

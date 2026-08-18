@@ -62,7 +62,7 @@ export function Configurator() {
           <WordReveal
             as="h2"
             text={'Find your\nmixing solution'}
-            className="font-display text-section font-semibold text-ink" />
+            className="font-display text-section font-bold text-ink" />
           
           <Reveal className="max-w-sm">
             <p className="text-[15px] leading-relaxed text-graphite">

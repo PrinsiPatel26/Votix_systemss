@@ -17,7 +17,7 @@ export function CaseStudiesSection() {
           <WordReveal
             as="h2"
             text={'Results, measured\nin production'}
-            className="font-display text-section font-semibold text-ink" />
+            className="font-display text-section font-bold text-ink" />
           
           <Reveal>
             <TextLink to="/case-studies">All case studies</TextLink>

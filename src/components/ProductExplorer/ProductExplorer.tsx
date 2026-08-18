@@ -23,7 +23,7 @@ export function ProductExplorer() {
           <WordReveal
             as="h2"
             text={'Every component\nis a design decision'}
-            className="max-w-xl font-display text-section font-semibold text-ink" />
+            className="max-w-xl font-display text-section font-bold text-ink" />
           
           <Reveal>
             <p className="max-w-sm text-[15px] leading-relaxed text-graphite">

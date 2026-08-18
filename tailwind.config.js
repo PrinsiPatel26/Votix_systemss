@@ -31,9 +31,9 @@ export default {
         content: '1440px',
       },
       fontSize: {
-        display: ['clamp(1.3rem, 4vw, 6.5rem)', { lineHeight: '0.94', letterSpacing: '-0.03em' }],
-        section: ['clamp(1.1rem, 2.8vw, 3.9rem)', { lineHeight: '1.02', letterSpacing: '-0.025em' }],
-        colossal: ['clamp(2rem, 8vw, 13rem)', { lineHeight: '0.82', letterSpacing: '-0.045em' }],
+        display: ['clamp(2rem, 5.5vw, 6.5rem)', { lineHeight: '0.94', letterSpacing: '-0.03em' }],
+        section: ['clamp(1.4rem, 3.5vw, 3.9rem)', { lineHeight: '1.02', letterSpacing: '-0.025em' }],
+        colossal: ['clamp(2.4rem, 9vw, 13rem)', { lineHeight: '0.82', letterSpacing: '-0.045em' }],
       },
       transitionTimingFunction: {
         expo: 'cubic-bezier(0.23, 1, 0.32, 1)',

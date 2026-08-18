@@ -19,7 +19,7 @@ export function FAQ() {
             <WordReveal
               as="h2"
               text={'Questions we\nare asked most'}
-              className="font-display text-section font-semibold text-ink" />
+              className="font-display text-section font-bold text-ink" />
             
             <Reveal>
               <p className="mt-6 max-w-xs text-[15px] leading-relaxed text-graphite">

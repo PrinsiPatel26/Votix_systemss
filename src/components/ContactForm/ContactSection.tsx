@@ -22,7 +22,7 @@ export function ContactSection({ sectionNumber = '17' }: {sectionNumber?: string
             <WordReveal
               as="h2"
               text={'Let’s talk\nengineering.'}
-              className="font-display text-section font-semibold text-ink" />
+              className="font-display text-section font-bold text-ink" />
             
             <Reveal>
               <p className="mt-7 max-w-md text-[16px] leading-relaxed text-graphite">

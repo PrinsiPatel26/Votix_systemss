@@ -22,7 +22,7 @@ export function EngineeringSection() {
             <WordReveal
               as="h2"
               text={'From process\nto performance'}
-              className="font-display text-section font-semibold text-ink" />
+              className="font-display text-section font-bold text-ink" />
             
             <Reveal>
               <p className="mt-8 max-w-md text-[16px] leading-relaxed text-graphite">
