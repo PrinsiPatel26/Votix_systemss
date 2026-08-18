@@ -46,16 +46,16 @@ export function Industries() {
         } />
       
 
-      <section className="w-full bg-white py-[60px] md:py-[80px] lg:py-[110px]">
-        <div className="mx-auto max-w-content px-6 md:px-10">
-          <div className="flex flex-wrap items-center gap-2 border-t border-line pt-6">
-            <span className="mr-4 text-[11px] uppercase tracking-label text-steel">Filter by technology</span>
+      <section className="w-full bg-white py-[50px] sm:py-[60px] md:py-[80px] lg:py-[110px]">
+        <div className="mx-auto max-w-content px-4 sm:px-6 md:px-10">
+          <div className="flex flex-wrap items-center gap-2 border-t border-line pt-4 sm:pt-6">
+            <span className="mr-2 sm:mr-4 text-[10px] sm:text-[11px] uppercase tracking-label text-steel">Filter</span>
             <button
               type="button"
               onClick={() => setTech('all')}
               aria-pressed={tech === 'all'}
               className={cn(
-                'border px-4 py-2.5 text-[11px] font-medium uppercase tracking-label transition-colors duration-200',
+                'border px-3 sm:px-4 py-2 sm:py-2.5 text-[10px] sm:text-[11px] font-medium uppercase tracking-label transition-colors duration-200',
                 tech === 'all' ? 'border-accent text-accent' : 'border-line text-graphite hover:border-ink hover:text-ink'
               )}>
               
@@ -68,7 +68,7 @@ export function Industries() {
               onClick={() => setTech(p.slug)}
               aria-pressed={tech === p.slug}
               className={cn(
-                'border px-4 py-2.5 text-[11px] font-medium uppercase tracking-label transition-colors duration-200',
+                'border px-3 sm:px-4 py-2 sm:py-2.5 text-[10px] sm:text-[11px] font-medium uppercase tracking-label transition-colors duration-200 min-h-[44px]',
                 tech === p.slug ? 'border-accent text-accent' : 'border-line text-graphite hover:border-ink hover:text-ink'
               )}>
               
@@ -77,7 +77,7 @@ export function Industries() {
             )}
           </div>
 
-          <div className="mt-10 grid gap-4 lg:grid-cols-12 lg:gap-5">
+          <div className="mt-8 sm:mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-12 lg:gap-5">
             {visible.map((ind, i) =>
             <motion.article
               key={ind.slug}
@@ -85,7 +85,7 @@ export function Industries() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.26, delay: Math.min(i * 0.04, 0.2), ease: [0.23, 1, 0.32, 1] }}
-              className={cn('h-[300px] md:h-[380px]', layout[ind.slug], tech !== 'all' && 'lg:col-span-4 lg:h-[380px]')}>
+              className={cn('h-[280px] sm:h-[300px] md:h-[380px]', layout[ind.slug], tech !== 'all' && 'lg:col-span-4 lg:h-[380px]')}>
               
                 <Link
                 to={`/industries/${ind.slug}`}
@@ -99,15 +99,15 @@ export function Industries() {
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-expo group-hover:scale-[1.06]" />
                 
                   <span aria-hidden className="absolute inset-0 bg-ink/40 transition-colors duration-300 group-hover:bg-ink/60" />
-                  <span className="absolute left-6 top-6 text-[10px] tabular-nums tracking-label text-white/70">{ind.index}</span>
-                  <span className="absolute inset-x-6 bottom-6">
-                    <span className="block font-display text-[24px] font-semibold tracking-[-0.02em] text-white md:text-[28px]">
+                  <span className="absolute left-4 top-4 sm:left-6 sm:top-6 text-[9px] sm:text-[10px] tabular-nums tracking-label text-white/70 font-medium">{ind.index}</span>
+                  <span className="absolute inset-x-4 bottom-4 sm:inset-x-6 sm:bottom-6">
+                    <span className="block font-display text-[18px] sm:text-[24px] font-semibold tracking-[-0.02em] text-white md:text-[28px]">
                       {ind.name}
                     </span>
-                    <span className="mt-2 block max-w-sm text-[13.5px] leading-snug text-white/75">{ind.summary}</span>
-                    <span className="mt-4 inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-label text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                      View industry
-                      <ArrowRightIcon className="h-4 w-4" aria-hidden />
+                    <span className="mt-1 sm:mt-2 block max-w-sm text-[12px] sm:text-[13.5px] leading-snug text-white/75">{ind.summary}</span>
+                    <span className="mt-3 sm:mt-4 inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-medium uppercase tracking-label text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      View
+                      <ArrowRightIcon className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden />
                     </span>
                   </span>
                 </Link>
